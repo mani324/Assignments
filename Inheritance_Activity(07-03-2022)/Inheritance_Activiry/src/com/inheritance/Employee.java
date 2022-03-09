@@ -25,6 +25,13 @@ package com.inheritance;
 			salary=basicSalary+(basicSalary*specialAllowance/100)+(basicSalary*hra/100);
 			return salary;
 		}
+		public double calculateTransportAllowance()
+		{  
+		
+			return transportAllowance;
+			
+		}
+
 		
 	    public Employee() {
 			super();
