@@ -46,10 +46,6 @@ public class Store {
     	  sp.add(shop4);
     	  p.setShop(sp);
     	  s.save(p);
-    	  s.save(shop1);
-    	  s.save(shop2);
-    	  s.save(shop3);
-    	  s.save(shop4);
     	  tr.commit();
     	  s.close();
     	  System.out.println("Data added sucessfully......!!!!");
