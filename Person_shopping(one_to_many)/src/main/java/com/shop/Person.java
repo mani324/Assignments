@@ -15,16 +15,16 @@ import javax.persistence.Table;
 public class Person {
 	@Id
 	@GeneratedValue(strategy=GenerationType.TABLE)
-	private int person_id;
+	private int person_Id;
 	private String name;
 	@OneToMany(targetEntity=Shopping.class,cascade=CascadeType.ALL)
-	@JoinColumn(name="person_id")
+	@JoinColumn(name="person_Id")
 	private List<Shopping>shop;
-	public int getPerson_id() {
-		return person_id;
+	public int getPerson_Id() {
+		return person_Id;
 	}
-	public void setPerson_id(int person_id) {
-		this.person_id = person_id;
+	public void setPerson_Id(int person_Id) {
+		this.person_Id = person_Id;
 	}
 	public String getName() {
 		return name;
